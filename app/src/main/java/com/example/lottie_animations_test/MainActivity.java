@@ -21,5 +21,6 @@ public class MainActivity extends AppCompatActivity {
             imageToTest.setVisibility(View.INVISIBLE);
         });
     }
-    //private void Animation()
+    //Link de lottie
+    //https://lottiefiles.com/featured?page=5
 }
