@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         btnAnimationStart.setOnClickListener(view -> {
             animationTest.setVisibility(View.VISIBLE);
             animationTest.setAnimation(R.raw.jumpingsquares);
+            animationTest.loop(true);
             animationTest.playAnimation();
             btnAnimation.setEnabled(false);
 
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             handler.postDelayed(() -> {
                 animationTest.setVisibility(View.INVISIBLE);
                 btnAnimation.setEnabled(true);
-            }, 10000);
+            }, 15000);
         });
     }
     //Link de lottie
