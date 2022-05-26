@@ -4,28 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".Second_Interface">
     <LinearLayout
-        android:id="@+id/animationLayout"
+        android:id="@+id/layoutAnimation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:flow_verticalAlign="center"
         android:orientation="vertical"
         >
-        <Button
-            android:id="@+id/btnAnimation"
-            android:layout_width="wrap_content"
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageToTest"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cambiar de ventana"
-            android:layout_gravity="center"/>
-        <Button
-            android:id="@+id/btnAnimationStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Iniciar animacion"
-            android:layout_gravity="center"/>
+            app:lottie_url="REPLACE_JSON_URL"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/jumpingsquares"
+            app:lottie_repeatCount="1"/>
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
